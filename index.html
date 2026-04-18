@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>L&DLALC — Leeton and District Local Aboriginal Land Council</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -59,29 +59,94 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="page-hero">
-  <!-- full circular motif — right side, big, subtle -->
-  <img src="assets/images/hero-img.png" alt="img" 
-       style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:500px;opacity:0.5;pointer-events:none;" aria-hidden="true"/>
-  <div class="container" style="position:relative;z-index:2;">
-    <div class="breadcrumb-wrap"><a href="#">Home</a> &nbsp;/&nbsp; <span>L&amp;DLALC</span></div>
-    <div class="row align-items-center gy-4">
-      <div class="col-lg-7">
-        <h1>Leeton and District<br/>Local Aboriginal<br/>Land Council</h1>
-        <p>Serving the Wiradjuri Nation and the broader Aboriginal community of the Leeton district — committed to culture, land, and community wellbeing.</p>
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="num">3,500</div><div class="lbl">km² managed</div></div>
-          <div class="hero-stat"><div class="num">1984</div><div class="lbl">established</div></div>
-          <div class="hero-stat"><div class="num">4+</div><div class="lbl">language groups</div></div>
+ 
+  <!-- Aboriginal art layers -->
+  <img src="assets/images/shape-circle.png"  class="ha-circle-main" aria-hidden="true" alt=""/>
+  <img src="assets/images/shape-left.png"    class="ha-corner-tl"   aria-hidden="true" alt=""/>
+  <img src="assets/images/img-left.png"      class="ha-spiral-bl"   aria-hidden="true" alt=""/>
+  <img src="assets/images/hero-img.png"      class="ha-mid"         aria-hidden="true" alt=""/>
+  <img src="assets/images/img-right.png"     class="ha-spiral-r"    aria-hidden="true" alt=""/>
+  <img src="assets/images/shape-right.png"   class="ha-corner-br"   aria-hidden="true" alt=""/>
+ 
+  <!-- Dot grid -->
+  <div class="hero-dots" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+ 
+  <div class="hero-inner">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+ 
+        <!-- LEFT: Text -->
+        <div class="col-lg-6">
+          <div class="breadcrumb-wrap">
+            <a href="#">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-pill">L&amp;DLALC</span>
+          </div>
+ 
+          <h1>
+            Leeton and District<br/>
+            <span class="h1-accent">Local Aboriginal</span><br/>
+            Land Council
+          </h1>
+ 
+          <p class="hero-sub">Serving the Wiradjuri Nation and the broader Aboriginal community of the Leeton district — committed to culture, land, and community wellbeing.</p>
+ 
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="num">3,500</span>
+              <span class="lbl">km² managed</span>
+            </div>
+            <div class="hero-stat">
+              <span class="num">1984</span>
+              <span class="lbl">established</span>
+            </div>
+            <div class="hero-stat">
+              <span class="num">4+</span>
+              <span class="lbl">language groups</span>
+            </div>
+          </div>
+ 
+          <div class="hero-ctas">
+            <a href="#history" class="btn-hw">Our History ↓</a>
+            <a href="#membership" class="btn-ho">Join as Member →</a>
+          </div>
         </div>
-        <div class="d-flex gap-3 mt-4 flex-wrap">
-          <a href="#history" class="btn-hw">Our History ↓</a>
-          <a href="#membership" class="btn-ho">Join as Member →</a>
+ 
+        <!-- RIGHT: Image -->
+        <div class="col-lg-6 hero-img-col">
+          <div class="hero-img-frame">
+ 
+            <!-- Decorative rings -->
+            <div class="hero-ring"></div>
+            <div class="hero-ring2"></div>
+ 
+            <!-- Top-right badge -->
+            <div class="hero-badge">
+              <div class="hb-num">1984</div>
+              <div class="hb-lbl">Founded</div>
+            </div>
+ 
+            <!-- Main photo -->
+            <img src="assets/images/main-banner-img.png"
+                 alt="LDLALC community members"
+                 class="hero-img-main"/>
+ 
+            <!-- Bottom-left floating card -->
+            <div class="hero-accent-card">
+              <div class="ac-label">Land Area</div>
+              <div class="ac-value">3,500 <span class="ac-unit">km²</span></div>
+              <div class="ac-sub">Managed Territory</div>
+            </div>
+ 
+          </div>
         </div>
-      </div>
-      <div class="col-lg-5">
-        <div>
-          <img src="assets/images/main-banner-img.png" alt="img" class="img-fluid">
-        </div>
+ 
       </div>
     </div>
   </div>
@@ -137,79 +202,104 @@
 </section>
 
 
-<!-- ═══ BOUNDARIES (dark navy — mirrors Significant Sites bg on home) ═══ -->
+<!-- ═══════════════════════════════════════════
+     BOUNDARIES
+═══════════════════════════════════════════ -->
 <section id="boundaries">
-  <!-- centered big circle -->
-  
-  
-  <!-- spiral left -->
-  <img src="assets/images/img-left.png" alt="img" 
-       style="position:absolute;left:-35px;top:70px;width:160px;opacity:0.10;pointer-events:none;mix-blend-mode:screen;" aria-hidden="true"/>
-
+  <img src="assets/images/frame-light.png" class="bn-art-bg"    aria-hidden="true" alt=""/>
+  <img src="assets/images/img-left.png"    class="bn-art-left"  aria-hidden="true" alt=""/>
+  <img src="assets/images/shape-right.png" class="bn-art-right" aria-hidden="true" alt=""/>
+ 
   <div class="container" style="position:relative;z-index:1;">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7">
         <span class="section-tag lt">Land Boundaries</span>
-        <h2 class="section-title white">Leeton and District Local Aboriginal Land Council — Boundaries</h2>
+        <h2 class="section-title white">Leeton and District Local Aboriginal<br/>Land Council — Boundaries</h2>
         <div class="divider-line cx"></div>
-        <p style="color:rgba(255,255,255,.65);font-size:15px;line-height:1.8;">The area for which LDLALC has responsibility totals about 3,500 km². At its widest point, the distance from east to west is about 50 km and north to south, 105 km. The corresponding local government authority is Leeton Shire Council.</p>
+        <p class="bn-intro">The area for which LDLALC has responsibility totals about 3,500 km². At its widest point, the distance from east to west is about 50 km and north to south, 105 km. The corresponding local government authority is Leeton Shire Council.</p>
       </div>
     </div>
-    <div class="row g-4 align-items-start">
+ 
+    <div class="row g-4 align-items-stretch">
       <div class="col-lg-7">
-        <div class="map-wrap">
-          <svg width="100%" viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
-            <rect width="700" height="320" fill="#1e3a6e"/>
-            <line x1="0" y1="80" x2="700" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <line x1="0" y1="160" x2="700" y2="160" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <line x1="0" y1="240" x2="700" y2="240" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <line x1="175" y1="0" x2="175" y2="320" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <line x1="350" y1="0" x2="350" y2="320" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <line x1="525" y1="0" x2="525" y2="320" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-            <path d="M0 160 Q175 135 350 160 Q525 185 700 160" stroke="rgba(255,255,255,0.14)" stroke-width="2.5" fill="none"/>
-            <path d="M350 0 Q370 80 350 160 Q330 240 350 320" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
-            <path d="M190 55 L445 55 L495 160 L445 285 L190 285 L140 160 Z" stroke="#DD3830" stroke-width="2" stroke-dasharray="8,4" fill="rgba(221,56,48,0.08)"/>
-            <text x="200" y="77" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" letter-spacing="1">LDLALC BOUNDARY AREA</text>
-            <circle cx="342" cy="162" r="24" fill="rgba(221,56,48,0.22)"/>
-            <circle cx="342" cy="162" r="14" fill="#DD3830" opacity=".9"/>
-            <circle cx="342" cy="162" r="6" fill="white"/>
-            <circle cx="342" cy="162" r="34" stroke="#DD3830" stroke-width="1.5" fill="none" opacity=".3"/>
-            <circle cx="342" cy="162" r="46" stroke="#DD3830" stroke-width="1" fill="none" opacity=".14"/>
-            <text x="364" y="156" font-family="sans-serif" font-size="14" font-weight="bold" fill="white">Leeton</text>
-            <text x="364" y="173" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">NSW 2705</text>
-          </svg>
-          <div class="map-info-body">
-            <div class="irow"><div class="idot"><svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0v8M0 4h8" stroke="white" stroke-width="1.5"/></svg></div><span>Total area of approximately <strong style="color:#fff;">3,500 km²</strong></span></div>
-            <div class="irow"><div class="idot"><svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0v8M0 4h8" stroke="white" stroke-width="1.5"/></svg></div><span>East to West: <strong style="color:#fff;">~50 km</strong> at widest point</span></div>
-            <div class="irow"><div class="idot"><svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0v8M0 4h8" stroke="white" stroke-width="1.5"/></svg></div><span>North to South: <strong style="color:#fff;">~105 km</strong></span></div>
-            <div class="irow"><div class="idot"><svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0v8M0 4h8" stroke="white" stroke-width="1.5"/></svg></div><span>Local government authority: <strong style="color:#fff;">Leeton Shire Council</strong></span></div>
+        <div class="bn-map-card">
+          <div class="bn-map-topbar">
+            <span class="bn-map-badge">
+              <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#DD3830"/></svg>
+              LDLALC Boundary Area
+            </span>
+            <span class="bn-map-loc">Leeton, NSW 2705</span>
+          </div>
+          <div class="bn-map-svg-wrap">
+            <img src="assets/images/ldlacd1.jpg" style="max-height: 280px;" alt="img" class="img-fluid w-100 object-fit-cover">
+          </div>
+          <div class="bn-info-rows">
+            <div class="bn-info-row"><div class="bn-info-dot"></div><span>Total area of approximately <strong>3,500 km²</strong></span></div>
+            <div class="bn-info-row"><div class="bn-info-dot"></div><span>East to West: <strong>~50 km</strong> at widest point</span></div>
+            <div class="bn-info-row"><div class="bn-info-dot"></div><span>North to South: <strong>~105 km</strong></span></div>
+            <div class="bn-info-row"><div class="bn-info-dot"></div><span>Local government authority: <strong>Leeton Shire Council</strong></span></div>
           </div>
         </div>
       </div>
+ 
       <div class="col-lg-5">
-        <div class="row g-3">
-          <div class="col-6"><div class="bstat"><div class="bnum">3,500</div><div class="bunit">km²</div><div class="blbl">Total Land Area</div></div></div>
-          <div class="col-6"><div class="bstat"><div class="bnum">50</div><div class="bunit">km</div><div class="blbl">East–West Width</div></div></div>
-          <div class="col-12"><div class="bstat"><div class="bnum">105</div><div class="bunit">km</div><div class="blbl">North–South Length</div></div></div>
-          <div class="col-12">
-            <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:22px;">
-              <p style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.75;margin:0;">The legislation under which LDLALC is constituted and the objectives the Land Council is obliged to pursue are stated in Section 1.1 of the Aboriginal Land Rights Act.</p>
+        <div class="d-flex flex-column gap-3 h-100">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="bn-stat-card">
+                <div class="bn-stat-num">3,500</div>
+                <div class="bn-stat-unit">km²</div>
+                <div class="bn-stat-label">Total Land Area</div>
+              </div>
             </div>
+            <div class="col-6">
+              <div class="bn-stat-card">
+                <div class="bn-stat-num">50</div>
+                <div class="bn-stat-unit">km</div>
+                <div class="bn-stat-label">East–West Width</div>
+              </div>
+            </div>
+          </div>
+          <div class="bn-stat-card bn-stat-wide">
+            <div class="d-flex align-items-center gap-4">
+              <div>
+                <div class="bn-stat-num">105</div>
+                <div class="bn-stat-unit">km</div>
+              </div>
+              <div class="bn-stat-divider"></div>
+              <div>
+                <div class="bn-stat-label" style="font-size:13px;margin-bottom:6px;">North–South Length</div>
+                <p style="font-size:12px;color:rgba(255,255,255,.42);line-height:1.65;margin:0;">Spanning from northern farmland to the southern reaches of the Shire boundary</p>
+              </div>
+            </div>
+          </div>
+          <div class="bn-authority-card">
+            <div class="bn-auth-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="bn-auth-label">Local Government Authority</div>
+              <div class="bn-auth-name">Leeton Shire Council</div>
+            </div>
+          </div>
+          <div class="bn-legal-card">
+            <div class="bn-legal-icon">§</div>
+            <p>The legislation under which LDLALC is constituted and the objectives the Land Council is obliged to pursue are stated in <strong>Section 1.1 of the Aboriginal Land Rights Act.</strong></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- ═══ GOVERNANCE (white) ═══ -->
+ 
+ 
+<!-- ═══════════════════════════════════════════
+     GOVERNANCE
+═══════════════════════════════════════════ -->
 <section id="governance">
-  
-  <!-- spiral right -->
-  <img src="assets/images/img-right.png" alt="img" 
-       style="position:absolute;right:-25px;bottom:50px;width:145px;opacity:0.56;pointer-events:none;" aria-hidden="true"/>
-
+  <img src="assets/images/img-left.png"   class="gv-art-left"  aria-hidden="true" alt=""/>
+  <img src="assets/images/img-right.png"  class="gv-art-right" aria-hidden="true" alt=""/>
+ 
   <div class="container" style="position:relative;z-index:1;">
     <div class="row mb-5">
       <div class="col-lg-6">
@@ -219,39 +309,72 @@
         <p class="body-text">The Primary Rules under which L&amp;DLALC Operates. The legislation under which LDLALC is constituted, and the objectives which the Land Council is obliged to pursue, is stated in Section 1.1 of the Aboriginal Land Rights Act.</p>
       </div>
     </div>
+ 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h4>Aboriginal Land Rights Act</h4>
-        <p>LDLALC operates under the Aboriginal Land Rights Act 1983 (NSW). This legislation defines the objects, objectives and obligations of all Local Aboriginal Land Councils across NSW.</p>
-      </div></div>
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-        <h4>Primary Rules</h4>
-        <p>The Primary Rules set out procedures for meetings, elections, financial management, and decision-making within the Land Council as required under the ALRA.</p>
-      </div></div>
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h4>Annual General Meetings</h4>
-        <p>L&amp;DLALC holds Annual General Meetings open to all members — essential for elections, financial reporting and community decision-making on land matters.</p>
-      </div></div>
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h4>Board of Directors</h4>
-        <p>A democratically elected Board of Directors governs the Land Council and is responsible for overall management, strategic direction and community accountability.</p>
-      </div></div>
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h4>Financial Accountability</h4>
-        <p>All financial accounts are independently audited annually. Reports are presented to members at the AGM in strict accordance with ALRA requirements.</p>
-      </div></div>
-      <div class="col-md-6 col-lg-4"><div class="gov-card">
-        <div class="gov-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <h4>Community Consultation</h4>
-        <p>The Land Council is committed to regular community consultation to ensure all decisions reflect the needs and aspirations of Aboriginal people in the Leeton area.</p>
-      </div></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">01</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>Aboriginal Land Rights Act</h4>
+          <p>LDLALC operates under the Aboriginal Land Rights Act 1983 (NSW). This legislation defines the objects, objectives and obligations of all Local Aboriginal Land Councils across NSW.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">02</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <h4>Primary Rules</h4>
+          <p>The Primary Rules set out procedures for meetings, elections, financial management, and decision-making within the Land Council as required under the ALRA.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">03</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4>Annual General Meetings</h4>
+          <p>L&amp;DLALC holds Annual General Meetings open to all members — essential for elections, financial reporting and community decision-making on land matters.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">04</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Board of Directors</h4>
+          <p>A democratically elected Board of Directors governs the Land Council and is responsible for overall management, strategic direction and community accountability.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">05</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Financial Accountability</h4>
+          <p>All financial accounts are independently audited annually. Reports are presented to members at the AGM in strict accordance with ALRA requirements.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gv-card">
+          <div class="gv-card-num">06</div>
+          <div class="gv-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h4>Community Consultation</h4>
+          <p>The Land Council is committed to regular community consultation to ensure all decisions reflect the needs and aspirations of Aboriginal people in the Leeton area.</p>
+        </div>
+      </div>
     </div>
-    <div class="act-box">
+ 
+    <div class="gv-act-box">
+      <img src="assets/images/hero-img.png" class="gv-act-img" aria-hidden="true" alt=""/>
       <div class="row align-items-center" style="position:relative;z-index:1;">
         <div class="col-lg-8">
           <p>In the words of the Act, <strong>"the object of Local Aboriginal Land Councils is to improve, protect and foster the best interests of all Aboriginal persons within their area."</strong> L&amp;DLALC takes this responsibility seriously in every decision made on behalf of our community.</p>
@@ -263,17 +386,15 @@
     </div>
   </div>
 </section>
-
-
-<!-- ═══ BOARD (light blue gradient) ═══ -->
+ 
+ 
+<!-- ═══════════════════════════════════════════
+     BOARD MEMBERS
+═══════════════════════════════════════════ -->
 <section id="board">
-  <!-- big circle right watermark -->
-  <img src="assets/images/hero-img-1.png" alt="img" 
-       style="position:absolute;right:-100px;top:50%;transform:translateY(-50%);width:430px;opacity:0.3;pointer-events:none;" aria-hidden="true"/>
-  <!-- corner art bottom left (rotated) -->
-  <img src="assets/images/img-left.png"
-       style="position:absolute;left:0;bottom:0;width:185px;opacity:0.47;pointer-events:none;transform:rotate(180deg);" aria-hidden="true"/>
-
+  <img src="assets/images/img-right.png"  class="bd-art-right" aria-hidden="true" alt=""/>
+  <img src="assets/images/shape-left.png" class="bd-art-left"  aria-hidden="true" alt=""/>
+ 
   <div class="container" style="position:relative;z-index:1;">
     <div class="row mb-5">
       <div class="col-lg-6">
@@ -283,90 +404,220 @@
         <p class="body-text">The inaugural Board meeting was held on 21st December 2007. Our elected Board members guide the Land Council's strategic direction and represent the interests of the entire community.</p>
       </div>
     </div>
+ 
     <div class="row g-4">
-      <div class="col-sm-6 col-lg-3">
-        <div class="mc"><div class="mav" style="background:linear-gradient(135deg,#c8d8ec,#a8bed8);"><div class="ini" style="color:rgba(59,109,165,.4);">DW</div><span class="rbadge">Chairperson</span></div><div class="mbody"><h5>David Watts</h5><div class="msub">Board Chairperson</div></div></div>
+      <!-- Chairperson -->
+      <div class="col-md-6">
+        <div class="bd-member-card">
+          <div class="bd-stripe" style="background:#DD3830;"></div>
+          <div class="bd-avatar-col" style="background:rgba(221,56,48,.06);">
+            <div class="bd-avatar" style="background:linear-gradient(135deg,#DD3830,#b82e28);">DW</div>
+            <div class="bd-avatar-ring" style="border-color:#DD3830;"></div>
+          </div>
+          <div class="bd-info-col">
+            <span class="bd-role-tag">Chairperson</span>
+            <div class="bd-name">David Watts</div>
+            <div class="bd-sub">Board Chairperson · LDLALC</div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 col-lg-3">
-        <div class="mc"><div class="mav" style="background:linear-gradient(135deg,#e8d5c4,#d4b89a);"><div class="ini" style="color:rgba(180,100,40,.35);">WI</div><span class="rbadge">Deputy Chair</span></div><div class="mbody"><h5>William Ingram</h5><div class="msub">Deputy Chairperson</div></div></div>
+      <!-- Deputy -->
+      <div class="col-md-6">
+        <div class="bd-member-card">
+          <div class="bd-stripe" style="background:#3B6DA5;"></div>
+          <div class="bd-avatar-col" style="background:rgba(59,109,165,.06);">
+            <div class="bd-avatar" style="background:linear-gradient(135deg,#3B6DA5,#2a5490);">WI</div>
+            <div class="bd-avatar-ring" style="border-color:#3B6DA5;"></div>
+          </div>
+          <div class="bd-info-col">
+            <span class="bd-role-tag" style="color:#3B6DA5;background:rgba(59,109,165,.08);">Deputy Chair</span>
+            <div class="bd-name">William Ingram</div>
+            <div class="bd-sub">Deputy Chairperson · LDLALC</div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 col-lg-3">
-        <div class="mc"><div class="mav" style="background:linear-gradient(135deg,#dce8d5,#b8d4a8);"><div class="ini" style="color:rgba(40,140,60,.3);">CB</div><span class="rbadge">Board Member</span></div><div class="mbody"><h5>Cindy Bates</h5><div class="msub">Board Member</div></div></div>
+      <!-- Member 1 -->
+      <div class="col-md-6">
+        <div class="bd-member-card">
+          <div class="bd-stripe" style="background:#0D1F3C;"></div>
+          <div class="bd-avatar-col" style="background:rgba(13,31,60,.05);">
+            <div class="bd-avatar" style="background:linear-gradient(135deg,#0D1F3C,#1a3a6b);">CB</div>
+            <div class="bd-avatar-ring" style="border-color:#0D1F3C;"></div>
+          </div>
+          <div class="bd-info-col">
+            <span class="bd-role-tag" style="color:#0D1F3C;background:rgba(13,31,60,.06);">Board Member</span>
+            <div class="bd-name">Cindy Bates</div>
+            <div class="bd-sub">Board Member · LDLALC</div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 col-lg-3">
-        <div class="mc"><div class="mav" style="background:linear-gradient(135deg,#e8e0d5,#d4c8b8);"><div class="ini" style="color:rgba(140,100,40,.3);">KD</div><span class="rbadge">Board Member</span></div><div class="mbody"><h5>Kane Davy</h5><div class="msub">Board Member</div></div></div>
+      <!-- Member 2 -->
+      <div class="col-md-6">
+        <div class="bd-member-card">
+          <div class="bd-stripe" style="background:#0D1F3C;"></div>
+          <div class="bd-avatar-col" style="background:rgba(13,31,60,.05);">
+            <div class="bd-avatar" style="background:linear-gradient(135deg,#1a3a6b,#0D1F3C);">KD</div>
+            <div class="bd-avatar-ring" style="border-color:#0D1F3C;"></div>
+          </div>
+          <div class="bd-info-col">
+            <span class="bd-role-tag" style="color:#0D1F3C;background:rgba(13,31,60,.06);">Board Member</span>
+            <div class="bd-name">Kane Davy</div>
+            <div class="bd-sub">Board Member · LDLALC</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="fbox">
-      <div class="row align-items-center" style="position:relative;z-index:1;">
-        <div class="col-lg-7"><span class="fpill">21 December 2007</span><h4>Inaugural Board Meeting</h4><p>The first Board meeting of the Leeton and District Local Aboriginal Land Council marked a landmark moment in community history. The founding members established the governance framework that continues to guide the council today.</p></div>
-        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0"><a href="#" class="btn-red">Meet the Full Board →</a></div>
+ 
+    <!-- Founding box -->
+    <div class="bd-founding">
+      <img src="assets/images/hero-img-1.png" class="bd-founding-art" aria-hidden="true" alt=""/>
+      <div class="bd-founding-year">2007</div>
+      <div class="bd-founding-content">
+        <span class="bd-founding-pill">21 December 2007</span>
+        <h4>Inaugural Board Meeting</h4>
+        <p>The first Board meeting of the Leeton and District Local Aboriginal Land Council marked a landmark moment in community history. The founding members established the governance framework that continues to guide the council today.</p>
+      </div>
+      <div style="position:relative;z-index:1;flex-shrink:0;">
+        <a href="#" class="btn-red">Meet the Full Board →</a>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- ═══ MEMBERSHIP (dark navy) ═══ -->
+ 
+ 
+<!-- ═══════════════════════════════════════════
+     MEMBERSHIP
+═══════════════════════════════════════════ -->
 <section id="membership">
-  <!-- spiral top left -->
-  <img src="assets/images/img-left.png" alt="img" 
-       style="position:absolute;left:-20px;top:50px;width:155px;opacity:0.10;pointer-events:none;mix-blend-mode:screen;" aria-hidden="true"/>
-
+  <img src="assets/images/img-left.png"   class="mb-art-left"  aria-hidden="true" alt=""/>
+  <img src="assets/images/img-right.png"  class="mb-art-right" aria-hidden="true" alt=""/>
+ 
   <div class="container" style="position:relative;z-index:1;">
-    <div class="row mb-5">
-      <div class="col-lg-6">
-        <span class="section-tag lt">Join Us</span>
-        <h2 class="section-title white">Membership</h2>
+ 
+    <!-- Intro row -->
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-7">
+        <span class="mb-intro-tag">Join Us</span>
+        <h2 class="mb-title">Become a Member<br/>of L&amp;DLALC</h2>
         <div class="divider-line"></div>
-        <p style="font-size:15px;color:rgba(255,255,255,.7);line-height:1.8;">All applications for membership must be accompanied by a certified copy of the applicant's full birth certificate and a 'Confirmation of Aboriginality' certificate from a recognised Aboriginal Organisation.</p>
+        <p class="mb-lead">All applications for membership must be accompanied by a certified copy of the applicant's full birth certificate and a 'Confirmation of Aboriginality' certificate from a recognised Aboriginal Organisation, if they are not a direct descendant of an L&amp;DLALC member.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+        <div style="display:inline-flex;align-items:center;gap:32px;background:#F4F7FB;border-radius:14px;padding:20px 28px;">
+          <div style="text-align:center;">
+            <div style="font-family:'Jost',sans-serif;font-size:32px;font-weight:800;color:var(--navy);line-height:1;">18+</div>
+            <div style="font-size:10px;color:#8a94a6;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Age Requirement</div>
+          </div>
+          <div style="width:1px;height:40px;background:#e2e6ed;"></div>
+          <div style="text-align:center;">
+            <div style="font-family:'Jost',sans-serif;font-size:32px;font-weight:800;color:var(--navy);line-height:1;">Free</div>
+            <div style="font-size:10px;color:#8a94a6;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Membership</div>
+          </div>
+          <div style="width:1px;height:40px;background:#e2e6ed;"></div>
+          <div style="text-align:center;">
+            <div style="font-family:'Jost',sans-serif;font-size:32px;font-weight:800;color:var(--navy);line-height:1;">4</div>
+            <div style="font-size:10px;color:#8a94a6;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Simple Steps</div>
+          </div>
+        </div>
       </div>
     </div>
+ 
+    <!-- Two cards -->
     <div class="row g-4">
       <div class="col-lg-6">
-        <div class="ec">
-          <h4>Eligibility Requirements</h4>
-          <div class="ei"><span class="edot"></span><span>Must be of Aboriginal descent and identify as an Aboriginal person</span></div>
-          <div class="ei"><span class="edot"></span><span>Must be accepted by the Aboriginal community in the LDLALC area</span></div>
-          <div class="ei"><span class="edot"></span><span>Must be 18 years of age or older at the time of application</span></div>
-          <div class="ei"><span class="edot"></span><span>Provide certified copy of full birth certificate</span></div>
-          <div class="ei"><span class="edot"></span><span>Provide 'Confirmation of Aboriginality' from a recognised incorporated Aboriginal Organisation</span></div>
-          <div class="ei"><span class="edot"></span><span>If not a direct descendant of an L&amp;DLALC member, additional documentation may be required</span></div>
+        <div class="mb-elig-card">
+          <h4>
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Eligibility Requirements
+          </h4>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Must be of Aboriginal descent and identify as an Aboriginal person</span>
+          </div>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Must be accepted by the Aboriginal community in the LDLALC area</span>
+          </div>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Must be 18 years of age or older at the time of application</span>
+          </div>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Provide a certified copy of your full birth certificate</span>
+          </div>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Provide a 'Confirmation of Aboriginality' from a recognised incorporated Aboriginal Organisation</span>
+          </div>
+          <div class="mb-elig-item">
+            <div class="mb-elig-dot"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>If not a direct descendant of an L&amp;DLALC member, additional documentation may be required</span>
+          </div>
         </div>
       </div>
+ 
       <div class="col-lg-6">
-        <div class="ec">
-          <h4>How to Apply</h4>
-          <div class="sw"><div class="snum">1</div><div class="sc"><h5>Gather Your Documents</h5><p>Obtain a certified copy of your full birth certificate and a Confirmation of Aboriginality from a recognised Aboriginal organisation.</p></div></div>
-          <div class="sw"><div class="snum">2</div><div class="sc"><h5>Complete Application Form</h5><p>Collect an official membership application form from the LDLALC office at Shop 1/5 Belah Street, Leeton NSW 2705.</p></div></div>
-          <div class="sw"><div class="snum">3</div><div class="sc"><h5>Submit Your Application</h5><p>Lodge your completed application along with all required documents in person or by post to our Leeton office.</p></div></div>
-          <div class="sw" style="margin-bottom:0;"><div class="snum">4</div><div class="sc"><h5>Await Confirmation</h5><p>The Board will review your application. Approved members will receive a membership certificate.</p></div></div>
+        <div class="mb-steps-card">
+          <h4>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            How to Apply
+          </h4>
+          <div class="mb-step">
+            <div class="mb-step-num">1</div>
+            <div class="mb-step-body">
+              <h5>Gather Your Documents</h5>
+              <p>Obtain a certified copy of your full birth certificate and a Confirmation of Aboriginality from a recognised Aboriginal organisation in your area.</p>
+            </div>
+          </div>
+          <div class="mb-step">
+            <div class="mb-step-num">2</div>
+            <div class="mb-step-body">
+              <h5>Complete Application Form</h5>
+              <p>Collect and complete an official membership application form from the LDLALC office at Shop 1/5 Belah Street, Leeton NSW 2705.</p>
+            </div>
+          </div>
+          <div class="mb-step">
+            <div class="mb-step-num">3</div>
+            <div class="mb-step-body">
+              <h5>Submit Your Application</h5>
+              <p>Lodge your completed application along with all required documents in person or by post to our Leeton office.</p>
+            </div>
+          </div>
+          <div class="mb-step" style="margin-bottom:0;">
+            <div class="mb-step-num">4</div>
+            <div class="mb-step-body">
+              <h5>Await Confirmation</h5>
+              <p>The Board will review your application and notify you of the outcome. Approved members will receive a membership certificate.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="ctablock">
-      <img src="assets/images/hero-img.png" alt="img" 
-           style="position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:260px;opacity:0.60;pointer-events:none;" aria-hidden="true"/>
-      <div style="position:relative;z-index:1;">
+ 
+    <!-- CTA -->
+    <div class="mb-cta">
+      <img src="assets/images/hero-img.png"    class="mb-cta-art"  aria-hidden="true" alt=""/>
+      <img src="assets/images/shape-left.png"  class="mb-cta-art2" aria-hidden="true" alt=""/>
+      <div class="mb-cta-left">
         <h3>Ready to Become a Member?</h3>
-        <p>Contact our office today to begin your membership application and become part of the L&amp;DLALC community.</p>
-        <div class="d-flex gap-3 justify-content-center flex-wrap">
-          <a href="tel:0269534344" class="bws">Call (02) 6953 4344</a>
-          <a href="mailto:admin@ldlalc.com.au" class="btn-ho">admin@ldlalc.com.au</a>
-        </div>
+        <p>Contact our office today to begin your membership application.</p>
+      </div>
+      <div class="mb-cta-btns">
+        <a href="tel:0269534344" class="btn-cta-white">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (02) 6953 4344
+        </a>
+        <a href="mailto:admin@ldlalc.com.au" class="btn-cta-outline">admin@ldlalc.com.au</a>
       </div>
     </div>
+ 
   </div>
 </section>
 
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <img src="data:image/png;base64,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"
-       style="position:absolute;right:-80px;bottom:-80px;width:380px;opacity:0.05;pointer-events:none;" aria-hidden="true"/>
-  <img src="data:image/png;base64,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"
-       style="position:absolute;left:0;bottom:0;width:220px;opacity:0.06;pointer-events:none;" aria-hidden="true"/>
-
   <div class="container" style="position:relative;z-index:1;">
     <div class="row gy-4">
       <div class="col-lg-3 col-md-6">
